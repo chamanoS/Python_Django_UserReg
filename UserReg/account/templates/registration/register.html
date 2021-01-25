@@ -2,8 +2,9 @@
 
 {% block content %}
     <h1>Create New Account </h1>
-    <from method="POST">
+    <form method="POST">
         {% csrf_token %}
+        {{form.as_p}}
         <button>Register</button>
-    </from>
+    </form>
 {% endblock %}
